@@ -1,0 +1,27 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
