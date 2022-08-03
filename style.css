@@ -1,5 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -24,4 +26,45 @@ p {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.btn-success {
+    background-color: #5cb85f;
+    border: none;
+}
+
+.nav-item {
+    margin-right: 1em;
+}
+
+.nav-item .active {
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.hero-img {
+    position: relative;
+    right: 0;
+}
+
+.why-us-text {
+    max-width: 30rem;
+}
+
+.why-us-text p {
+    margin: 0;
+}
+
+.why-us-text img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
 }
