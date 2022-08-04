@@ -50,11 +50,6 @@ p {
     color: rgba(0, 0, 0, 1);
 }
 
-.hero-img {
-    position: relative;
-    right: 0;
-}
-
 .why-us-text {
     max-width: 30rem;
 }
@@ -67,4 +62,25 @@ p {
     width: 24px;
     height: 24px;
     margin-right: 1rem;
+}
+
+.offcanvas {
+    max-width: 50%;
+}
+
+.mycard {
+    width: 16rem;
+    border: solid 1px #d0d0d0;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .mycard {
+        width: 100%;
+    }
+  }
+
+.card-title {
+    font-weight: 700;
 }
