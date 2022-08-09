@@ -1,3 +1,8 @@
+:root {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     margin: 0;
@@ -212,6 +217,7 @@ p {
 .carousel-button-content:hover {
     background-color: #5cb85f;
     border: none;
+    transition: all 0.5s ease-out;
 }
 
 .carousel-button-content span.next,
@@ -230,7 +236,7 @@ p {
     border: 2px solid #fff;
     border-top: none;
     border-left: none;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-out;
 }
 
 .swiper-button-prev {
