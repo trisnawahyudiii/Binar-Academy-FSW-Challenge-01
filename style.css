@@ -37,11 +37,6 @@ p {
     margin-right: 1em;
 }
 
-.nav-item .active {
-    font-weight: 600;
-    transition: 0.5s;
-}
-
 .nav-link {
     color: rgba(0, 0, 0, 0.55);
 }
@@ -52,47 +47,6 @@ p {
 
 .navbar-collapse {
     align-items: flex-end;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar-collapse {
-        align-items: flex-start;
-    }
-
-    .navbar-collapse ul {
-        margin-left: 1rem;
-    }
-
-    .offcanvas {
-        max-width: 50%;
-    }
-
-    .mycard {
-        width: 100% !important;
-    }
-
-    #faq-section .faq-container {
-        align-items: center;
-    }
-
-    .footer-child ul {
-        padding: 0px !important;
-    }
-}
-
-@media screen and (min-width: 990px) {
-    .hero-desc {
-        padding: 5rem;
-        max-width: 50%;
-    }
-
-    .accordion {
-        max-width: 50%;
-    }
-
-    .hero-ills {
-        max-width: 50%;
-    }
 }
 
 .why-us-text {
@@ -196,4 +150,140 @@ p {
 
     margin-top: auto;
     margin-left: 1rem;
+}
+
+.nav-item .active {
+    color: #5cb85f;
+    font-weight: 700;
+}
+
+/* carousel styling */
+
+.carouse-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f1f3ff;
+
+    padding: 3rem;
+    margin: 0 16px;
+
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.carousel-container {
+    padding-bottom: 5rem;
+}
+
+.rating-stars {
+    margin-bottom: 1rem;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 10;
+    top: 300px;
+}
+
+.carousel-button-content {
+    border: 1px solid #c4c4c4;
+    width: 32px;
+    height: 32px;
+    padding: 1rem;
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-button-content::after {
+    content: none;
+}
+
+.swiper-button-prev {
+    left: auto;
+    right: 50% !important;
+    margin: 0 1rem;
+}
+
+.swiper-button-next {
+    left: 50% !important;
+    right: auto;
+    margin: 0 1rem;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        align-items: flex-start;
+    }
+
+    .navbar-collapse ul {
+        margin-left: 1rem;
+    }
+
+    .offcanvas {
+        max-width: 50%;
+    }
+
+    .mycard {
+        width: 100% !important;
+    }
+
+    #faq-section .faq-container {
+        align-items: center;
+    }
+
+    .footer-child ul {
+        padding: 0px !important;
+    }
+
+    .carousel-card {
+        flex-direction: column;
+    }
+
+    .carousel-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+    }
+
+    .carousel-image {
+        margin: 1rem;
+    }
+
+    .carousel-container {
+        padding-bottom: 6.5rem;
+    }
+
+    .carousel-button {
+        position: absolute;
+        z-index: 10;
+        top: 425px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .hero-desc {
+        padding: 5rem;
+        max-width: 50%;
+    }
+
+    .accordion {
+        max-width: 50%;
+    }
+
+    .hero-ills {
+        max-width: 50%;
+    }
 }

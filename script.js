@@ -1,7 +1,10 @@
-$(document).ready(function () {
-    $("#nav-link").on("click", function () {
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-        console.log("activated");
-    });
+var swiper = new Swiper(".carouse-content", {
+    loop: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    autoHeight: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
