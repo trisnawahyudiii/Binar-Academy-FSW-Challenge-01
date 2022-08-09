@@ -296,6 +296,11 @@ p {
         z-index: 10;
         top: 425px;
     }
+
+    .accordion {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 990px) {
@@ -306,6 +311,7 @@ p {
 
     .accordion {
         max-width: 50%;
+        width: 50%;
     }
 
     .hero-ills {
