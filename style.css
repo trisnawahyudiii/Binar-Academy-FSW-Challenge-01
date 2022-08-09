@@ -197,15 +197,40 @@ p {
     border: 1px solid #c4c4c4;
     width: 32px;
     height: 32px;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 50%;
 
     align-items: center;
     justify-content: center;
+    /* background-color: #5cb85f; */
 }
 
 .carousel-button-content::after {
     content: none;
+}
+
+.carousel-button-content:hover {
+    background-color: #5cb85f;
+    border: none;
+}
+
+.carousel-button-content span.next,
+.carousel-button-content span.prev {
+    border: 2px solid #000;
+    width: 8px;
+    height: 8px;
+
+    border-top: none;
+    border-left: none;
+
+    transform: translateX(2px) rotate(135deg);
+}
+
+.carousel-button-content:hover span {
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transition: all 0.5s ease;
 }
 
 .swiper-button-prev {
